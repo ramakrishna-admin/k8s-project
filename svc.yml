@@ -1,12 +1,12 @@
----
 apiVersion: v1
-kind: service
+kind: Service
 metadata:
   name: mys
 spec:
   type: NodePort
   selector:
-    apps: run
- ports:
-   - port: 3000
-     targetPort: 3030
+    app: run  # Changed 'apps' to 'app'
+  ports:
+    - port: 3000
+      targetPort: 3030
+      nodePort: 30001  # Optional: NodePort range is 30000-32767
