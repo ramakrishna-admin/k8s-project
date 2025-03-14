@@ -1,6 +1,6 @@
 ---
 ApiVersion: v1
-kind: Deployment
+kind: service
 metadata:
   name: mysvc
 spec:
