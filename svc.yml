@@ -2,7 +2,7 @@
 ApiVersion: v1
 kind: Deployment
 metadata:
-  name: king
+  name: mysvc
 spec:
   type: NodePort
   selector:
