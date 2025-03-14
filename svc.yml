@@ -6,7 +6,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    apps: naveen
+    apps: run
  ports:
    - port: 3000
      targetPort: 3000
