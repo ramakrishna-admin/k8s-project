@@ -1,0 +1,12 @@
+---
+ApiVersion: v1
+kind: Deployment
+metadata:
+  name: king
+spec:
+  type: NodePort
+  selector:
+    apps: naveen
+ ports:
+   - port: 3000
+     targetPort: 3000
