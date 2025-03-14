@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -6,14 +5,16 @@ metadata:
 spec:
   replicas: 3
   selector: 
-    matchlables:
+    matchLabels:
       app: run 
   template:
-    matchlables:
-      app: run
+    metadata:
+      labels:
+        app: run
     spec:
       containers:
         - name: naveen
           image: ramakrishna737/game:v1
           ports:
             - containerPort: 3000
+
