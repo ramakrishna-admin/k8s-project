@@ -1,0 +1,19 @@
+---
+ApiVersion: v1
+kind: Deployment
+metadata:
+  name: king
+spec:
+  replicas: 3
+  selector: 
+    matchlables:
+      app: run 
+  template:
+    matchlables:
+      app: run
+    spec:
+      containers:
+        - name: naveen
+          image: ramakrishna737/game:v1
+          ports:
+            - containerPort: 3000
