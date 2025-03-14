@@ -9,4 +9,4 @@ spec:
   ports:
     - port: 3000
       targetPort: 3030
-      nodePort: 30011  # Optional: NodePort range is 30000-32767
+      nodePort: 30001  # Optional: NodePort range is 30000-32767
