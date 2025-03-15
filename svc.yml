@@ -8,5 +8,5 @@ spec:
     app: run  # Changed 'apps' to 'app'
   ports:
     - port: 3000
-      targetPort: 3030
+      targetPort: 3000
       nodePort: 30033  # Optional: NodePort range is 30000-32767
