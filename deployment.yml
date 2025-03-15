@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: naveen
-          image: ramakrishna737/game:v1
+          image: ramakrishna737/kittu:v1
           ports:
             - containerPort: 3000
 
